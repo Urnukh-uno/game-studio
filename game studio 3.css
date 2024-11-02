@@ -1,0 +1,693 @@
+/* Google Font 'Poppins' */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* css reset */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* color root */
+
+
+:root {
+    --color-1: #262b3f;
+    --color-2: #fff;
+    --color-3: #1e2337;
+    --color-4: rgb(255,255,255,.5);
+    --color-5: greenyellow;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #1e2337;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 85%;
+    height: 95%;
+    box-shadow: 0px 0px 30px rgb(20, 19, 19);
+    border-radius: 10px;
+    display: flex;
+}
+
+header aside, article {
+    width: 85%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    border-radius: 0px 10px 10px 0px;
+    background: var(--color-3);
+}
+
+header aside {
+    width: 15%;
+    border-radius: 10px 0px 0px 10px;
+    background: #1743e3;
+}
+
+header aside h1 img {
+    width: 92%;
+    height: 10%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 800;
+    background: rgb(255, 255, 255, .5);
+    border-radius: 10px 0 0 0;
+}
+
+header aside h1 i {
+    margin-left: 5px;
+}
+
+header aside button{
+    display: block;
+    padding: 8px 20px;
+    margin: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    background: rgb(7, 0, 144);
+    color: #fff;
+    margin-top: 5px;
+    transition: .3s linear;
+}
+
+header aside button:hover {
+    background: #000949;
+}
+
+header aside ul {
+    position: relative;
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 12%;
+    padding-bottom: 20px;
+}
+
+header aside ul::before {
+    content: '';
+    position: absolute;
+    width: 88%;
+    height: 2px;
+    background: rgb(184, 184, 184,.1);
+    bottom: 0;
+}
+
+header aside ul li {
+    padding: 2.5px 0px;
+}
+
+header aside ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255,.7);
+    font-size: 12px;
+    font-weight: 400;
+    transition: .3s linear;
+}
+
+header aside ul li a:hover {
+    color: #fff;
+}
+
+header aside ul li a i{
+    margin-right: 15px;
+}
+
+/* list item active  */
+
+header aside ul .active_li {
+    border-right: 3px solid #fff;
+}
+
+header aside ul .active_li a{
+    color: #fff;
+    font-size: 13px;
+}
+
+/* subscriptions box start */
+
+header aside .subscriptions {
+    width: 99%;
+    height: auto;
+    /* border: 1px solid #fff; */
+    margin-top: 15px;
+    margin-left: 12%;
+}
+
+header aside .subscriptions h5 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header aside .subscriptions .cards{
+    width: 88%;
+    height: 305px;
+    /* border: 1px solid #fff; */
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+header aside .subscriptions .cards::-webkit-scrollbar {
+    width: 4px;
+    background: rgb(184, 184, 184, .2);
+    border-radius: 20px;
+    visibility: hidden;
+    transition: .3s linear;
+}
+
+header aside .subscriptions .cards::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184, .7);
+    border-radius: 20px;
+    visibility: hidden;
+    transition: .3s linear;
+}
+
+header aside .subscriptions .cards:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+header aside .subscriptions .cards:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+header aside .subscriptions .cards .card{
+    margin-bottom: 10px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+}
+
+header aside .subscriptions .cards .card .img_bx {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+}
+
+header aside .subscriptions .cards .card .img_bx::before {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background: greenyellow;
+    border-radius: 50%;
+    border: 3px solid #000949;
+    top: 13px;
+    right: -5px;
+}
+
+header aside .subscriptions .cards .card .img_bx img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+header aside .subscriptions .cards .card .content {
+    margin-left: 8px;
+}
+
+header aside .subscriptions .cards .card h6 {
+    width: 100px;
+    color: #fff;
+    font-size: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header aside .subscriptions .cards .card .content p {
+    width: 100px;
+    color: rgb(255, 255, 255, .5);
+    font-size: 8px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header article nav {
+    width: 100%;
+    height: 9%;
+    /* border: 1px solid #fff; */
+    border-radius: 0px 10px 0px 0px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-1);
+}
+
+header article nav button{
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #1743e3;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+header article nav .search {
+    width: 40%;
+    background: var(--color-3);
+    padding: 4px 10px;
+    transition: .5s linear;
+}
+
+header article nav .search input {
+    width: 94%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    color: var(--color-2);
+    transition: .5s linear;
+}
+
+header article nav .search input::placeholder{
+    color: var(--color-4);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    transition: .5s linear;
+}
+
+header article nav .search i {
+    color: var(--color-4);
+    font: 13px;
+    transition: .5s linear;
+}
+
+header article nav .right_bx {
+    width: 38%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header article nav .right_bx i {
+    color: var(--color-4);
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+header article nav .right_bx i:hover {
+    color: rgb(255, 255, 255);
+}
+
+header article nav .right_bx button {
+    padding: 0px 20px;
+    background: rgb(184, 184, 184, .2);
+    border: 2px solid rgb(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    transition: .5s linear;
+}
+
+header article nav .right_bx button span{
+    margin: -2px 0px 0px 10px;
+}
+
+/* battery active class */
+
+header article nav .right_bx .active_battery {
+    background: #1743e3;
+    box-shadow: 0px 0px 20px #1743e3;
+}
+
+header article nav .right_bx .user_data {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+header article nav .right_bx .user_data h6 {
+    width: 70px;
+    color: var(--color-4);
+    font-weight: 600;
+    font-size: 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s linear;
+}
+
+header article nav .right_bx .user_data h5 {
+    color: #fff;
+    background: #1743e3;
+    border-radius: 50%;
+    padding: 8px 9px;
+    font-size: 11px;
+    margin: 0px 5px;
+    transition: .5s linear;
+}
+
+header article nav .right_bx .user_data i {
+    color: var(--color-2);
+    font-size: 12px;
+    transition: .7s linear;
+}
+
+header article nav .right_bx .user_data:hover i {
+    transform: rotate(180deg);
+}
+header article nav .right_bx .user_data .card {
+    position: absolute;
+    width: 130px;
+    height: 0px;
+    /* border: 1px solid #fff; */
+    top: 50px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0;
+    transition: 1s linear;
+}
+header article nav .right_bx .user_data:hover .card {
+    height: 200px;
+    opacity: 1;
+    overflow: unset;
+}
+
+header article nav .right_bx .user_data .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(184, 184, 184, .1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+header article nav .right_bx .user_data .card::after {
+    content: '';
+    position: absolute;
+    border-top: 15px solid rgb(184, 184, 184, .1);
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    top: -10px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+
+header article nav .right_bx .user_data .card img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+header article nav .right_bx .user_data .card h6{
+    width: unset;
+    overflow: unset;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+    transition: .5s linear;
+}
+
+header article nav .right_bx .user_data .card p {
+    font-size: 9px;
+    color: rgb(255, 255, 255, .5);
+    margin-bottom: 10px;
+    transition: .5s linear;
+}
+
+header article nav .right_bx .user_data .card .card_gta_img {
+    width: 110px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+header article .game1 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #fff; */
+    padding: 0px 30px;
+    margin-top: 20px;
+}
+
+header article .game1 h3 {
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: 600;
+    transition: .5s linear;
+}
+
+header article .game1 .game_bx {
+    width: 100%;
+    height: 175px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+header article .game1 .game_bx::-webkit-scrollbar {
+    display: none;
+}
+
+header article .game1 .game_bx .card{
+    min-width: 220px;
+    height: 160px;
+    /* border: 1px solid #fff; */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+header article .game1 .game_bx .card:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+header article .game1 .game_bx .card img {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+}
+
+header article .game1 .game_bx .card .content {
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-2);
+    margin-top: -5px;
+    transition: .5s linear;
+}
+
+header article .game1 .game_bx .card .content .left {
+    color: var(--color-2);
+    transition: .5s linear;
+}
+
+header article .game1 .game_bx .card .content .left h5 {
+    font-size: 12px;
+    font-weight: 500;
+    width: 150;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+header article .game1 .game_bx .card .content .left p {
+    font-size: 8px;
+    font-weight: 500;
+    width: 150;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(255, 255, 255, .5);
+}
+
+header article .game1 .game_bx .card .content .left h6 {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255, .5);
+    margin-top: 5px;
+    transition: .5s linear;
+}
+
+header article .game1 .btns  {
+    position: absolute;
+    right: 3%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255, .5);
+    transition: .5s linear;
+}
+
+header article .game1 .btns i {
+    margin-left: 5px;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+header article .game1 .btns i:hover {
+    color: var(--color-2);
+}
+
+header article .game2 {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    /* border: 1px solid #fff; */
+    padding: 0px 30px;
+    overflow: hidden;
+}
+
+header article .game2 h3 {
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: 600;
+    transition: .5s linear;
+}
+
+header article .game2 .games_bx {
+    width: 100%;
+    height: 350px;
+    margin-top: 8px;
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+header article .game2 .games_bx::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+    background: rgb(184, 184, 184, .2);
+    visibility: hidden;
+}
+
+header article .game2 .games_bx::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+header article .game2 .games_bx:hover::-webkit-scrollbar {
+    visibility: visible;
+}
+
+header article .game2 .games_bx:hover::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: rgb(184, 184, 184, .7);
+    visibility: hidden;
+}
+
+header article .game2 .games_bx .card {
+    width: 100px;
+    height: 170px;
+    /* border: 1px solid #fff; */
+    margin: 0px 5px 11px 0px;
+}
+
+header article .game2 .games_bx .card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+header article .game2 .games_bx .content {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+header article .game2 .games_bx .content h6 {
+    width: 100%;
+    color: var(--color-2);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s linear;
+}
+
+header article .game2 .games_bx .content p {
+    width: 100%;
+    font-size: 9px;
+    font-weight: 500s;
+    color: rgb(255, 255, 255, .5);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: .5s linear;
+}
+
+/* 2nd Download Page Start */
+
+header article .download_realted_box {
+    width: 100%;
+    height: 91%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+header article .download_realted_box .download_box, .realted_box {
+    width: 45%;
+    height: 100%;
+    border: 1px solid #fff;
+}
+
+header article .download_realted_box .download_box{
+    width: 55%;
+}
+
+header article .download_realted_box .download_box .img_video_bx{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 1s linear;
+}
+
+header article .download_realted_box .download_box .img_video_bx h6{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url('whack\ a\ mole1.jpg') no-repeat center center/cover;
+    transition: 1s linear;
+}
+
+header article .download_realted_box .download_box .img_video_bx h6{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url('whack\ a\ mole1.jpg') no-repeat center center/cover;
+    transition: 1s linear;
+}
