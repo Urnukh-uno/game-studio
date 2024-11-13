@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
+/* Гар утас */
+@media (max-width: 600px) {
+    /* Гар утасны загварын тохиргоо */
+  }
+  
+  /* iPad буюу таблет */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    /* Таблет загварын тохиргоо */
+}
+
 * {
     margin: 0;
     padding: 0;
