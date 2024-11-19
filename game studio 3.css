@@ -674,6 +674,7 @@ header article .download_realted_box .download_box, .realted_box {
 
 header article .download_realted_box .download_box{
     width: 55%;
+    padding: 0px 20px;
 }
 
 header article .download_realted_box .download_box .img_video_bx{
@@ -694,10 +695,6 @@ header article .download_realted_box .download_box .img_video_bx h6{
     transition: 1s linear;
 }
 
-header article .download_realted_box .download_box .img_video_bx h6{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background: url('whack\ a\ mole1.jpg') no-repeat center center/cover;
-    transition: 1s linear;
+header article .download_realted_box .download_box .img_video_bx video {
+    
 }
